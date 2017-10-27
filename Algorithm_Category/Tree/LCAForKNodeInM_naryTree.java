@@ -1,4 +1,6 @@
 package Tree;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -30,10 +32,11 @@ public class LCAForKNodeInM_naryTree {
 
     private class TreeNode {
         public int key;
-        public Set<TreeNode> children;
+        public List<TreeNode> children;
 
         public TreeNode(int key) {
             this.key = key;
+            children = new ArrayList<>();
         }
     }
 }
