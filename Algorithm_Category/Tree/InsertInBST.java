@@ -9,7 +9,7 @@ package Tree;
  * <p>
  * If the key is already existed in the binary search tree, you do not need to do anything
  */
-// Time: O(Height), Space: O(1)
+// Time: O(Height), Space: O(Height)
 public class InsertInBST {
     //iterative way
     public TreeNode insert(TreeNode root, int key) {

@@ -3,7 +3,7 @@ package Tree;
 /**
  * Check if a given binary tree is balanced. A balanced binary tree is one in which the depths of every node’s left and right subtree differ by at most 1.
  */
-// Time: O(n), Space: O(1)
+// Time: O(n), Space: O(height)
 public class CheckIfBinaryTreeIsBalanced {
     public boolean isBalanced(TreeNode root) {
         int val = helper(root);

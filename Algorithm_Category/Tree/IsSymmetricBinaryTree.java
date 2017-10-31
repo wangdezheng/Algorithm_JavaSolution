@@ -11,7 +11,7 @@ package Tree;
  1    4   4     1
  */
 
-// Time: O(n), Space: O(1)
+// Time: O(n), Space: O(Height)
 public class IsSymmetricBinaryTree {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {

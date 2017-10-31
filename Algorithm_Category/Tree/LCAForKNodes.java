@@ -8,6 +8,7 @@ import java.util.Set;
  * The given k nodes are guaranteed to be in the binary tree
  */
 
+// Time: O(n), Space: O(Height)
 public class LCAForKNodes {
     public TreeNode KNodesInLCA(TreeNode root, Set<TreeNode> nodes) {
         if (root == null || nodes.contains(root)) {

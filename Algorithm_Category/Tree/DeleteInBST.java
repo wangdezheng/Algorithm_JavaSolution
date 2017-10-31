@@ -6,7 +6,7 @@ package Tree;
  * Find your own way to delete the node from the binary search tree, after deletion the binary search tree's property should be maintained.
  */
 
-//Time: O(n) Space: O(1)
+//Time: O(n) Space: O(Height)
 public class DeleteInBST {
     public TreeNode delete(TreeNode root, int key) {
         if (root == null) {

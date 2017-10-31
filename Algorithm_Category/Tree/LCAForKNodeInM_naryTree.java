@@ -9,7 +9,7 @@ import java.util.Set;
  * There is no parent pointer for the nodes in the m-nary tree
  * The given k nodes are guaranteed to be in the m-nary tree
  */
-
+// Time: O(n), Space: O(Height)
 public class LCAForKNodeInM_naryTree {
     public TreeNode KNodesInMLCA(TreeNode root, Set<TreeNode> nodes) {
         if (root == null || nodes.contains(root)) {

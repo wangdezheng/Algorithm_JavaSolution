@@ -1,6 +1,6 @@
 package Tree;
 
-//Time: O(Height), Space: O(1)
+//Time: O(Height), Space: O(Height)
 public class SearchInBST {
     public TreeNode search(TreeNode root, int key) {
 //        TreeNode cur = root;   //Iterative way

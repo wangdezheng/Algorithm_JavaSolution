@@ -7,6 +7,7 @@ package Tree;
  * The given two nodes are guaranteed to be in the binary tree
  */
 
+//Time: O(n), Space: O(Height)
 public class LCA {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode one, TreeNode two) {
         if (root == null || root == one || root == two) {
