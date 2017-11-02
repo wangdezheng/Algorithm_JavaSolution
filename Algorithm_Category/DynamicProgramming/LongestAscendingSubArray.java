@@ -10,7 +10,8 @@ public class LongestAscendingSubArray {
         if (array.length <= 1) {
             return array.length;
         }
-        int cur = 1; // only need to record lastest longest ascending subarray length from 0th to ith(include)
+        // only need to record latest longest ascending subArray length from 0th to ith(include ith element)
+        int cur = 1;
         int result = 1;
         for (int i = 1; i < array.length; i++) {
             if (array[i] > array[i - 1]) {
