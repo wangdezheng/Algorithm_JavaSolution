@@ -10,7 +10,7 @@ package DynamicProgramming;
 //Time: O(n), Space: O(1)
 public class LargestSumOfSubarray {
     public int largestSum(int[] array) {
-        // sum[i] represents the greateset sum of subarray from 0th position to ith position (include i)
+        // sum[i] represents the greatest sum of subArray from 0th position to ith position (include i)
         int[] sum = new int[array.length];
         sum[0] = array[0];
         int lastMax = sum[0];
