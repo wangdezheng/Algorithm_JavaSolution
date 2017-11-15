@@ -12,7 +12,7 @@ package DynamicProgramming;
  * <p>
  * {2, 1, 1, 0, 2}, we are not able to reach the end of array
  */
-
+//Time: O(n ^ 2), Space: O(n)
 public class ArrayHopperI {
     public boolean canJump(int[] array) {
         int len = array.length;
