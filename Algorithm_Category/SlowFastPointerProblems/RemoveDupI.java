@@ -9,7 +9,7 @@ package SlowFastPointerProblems;
 //slow: all elements to the left side of slow(included) are the final results to return
 //fast: current index
 public class RemoveDupI {
-    public static int removeDup(int[] input) {
+    public int removeDup(int[] input) {
         if (input == null || input.length == 0) {
             return 0;
         }
