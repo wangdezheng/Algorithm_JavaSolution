@@ -1,4 +1,5 @@
 package SlowFastPointerProblems;
+
 /**
  * Given a sorted array, remove duplicated elements in it and keep at most two of them, return the length of result
  */
