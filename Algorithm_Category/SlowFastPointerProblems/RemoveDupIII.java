@@ -3,6 +3,7 @@ package SlowFastPointerProblems;
  * Given a sorted array, remove duplicated elements in it and don't keep them, return the length of result
  */
 
+
 //Time: O(n), Space: O(1)
 //slow: all elements to the left side of slow(not included) are the final results to return
 //fast: current index
