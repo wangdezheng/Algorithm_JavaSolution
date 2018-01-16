@@ -16,6 +16,7 @@ public class PushZerosI {
         }
         int left = 0;
         int right = input.length - 1;
+        //use <= rather than <, should consider numbers at left and right
         while(left <= right) {
             if (input[left] != 0) {
                 left++;
