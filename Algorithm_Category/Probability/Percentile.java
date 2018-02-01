@@ -14,7 +14,6 @@ import java.util.List;
  */
 public class Percentile {
     public int percentile95(List<Integer> lengths) {
-        // Write your solution here.
         return 0;
     }
 }
