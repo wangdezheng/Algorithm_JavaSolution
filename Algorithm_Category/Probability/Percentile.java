@@ -12,8 +12,20 @@ import java.util.List;
  * Examples:
  *      [1, 2, 3, ..., 95, 96, 97, 98, 99, 100], 95 percentile of all lengths is 95.
  */
+// Time: O(n), Space: O(n)
+//
 public class Percentile {
     public int percentile95(List<Integer> lengths) {
-        return 0;
+        int[] array = new int[4097];
+        for (Integer i : lengths) {
+            array[i]++;
+        }
+        double pivot = lengths.size() * 0.05;
+        int i = 4097;
+        int count = 0;
+        while (count <= pivot) {
+            count += array[--i];
+        }
+        return i;
     }
 }
