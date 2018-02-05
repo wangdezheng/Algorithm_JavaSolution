@@ -8,7 +8,7 @@ import java.util.Map;
  */
 //Time: O(n), Space: O(n)
 public class DeepCopyLinkedListWithRandomPointer {
-    public ListNode deepCopy(ListNode head) {
+    public ListNode cloneLinkedList(ListNode head) {
         if (head == null) {
             return null;
         }
