@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Each of the nodes in the linked list has another pointer pointing to a random node in the list or null. Make a deep copy of the original list.
  */
-// Time: O(n), Space: O(n)
+//Time: O(n), Space: O(n)
 public class DeepCopyLinkedListWithRandomPointer {
     public ListNode deepCopy(ListNode head) {
         if (head == null) {
