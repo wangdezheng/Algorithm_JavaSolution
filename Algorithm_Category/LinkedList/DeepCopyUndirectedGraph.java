@@ -12,8 +12,8 @@ import java.util.Map;
         The given graph is not null
  */
 
-// Time: O(n), Space: O(n)
-// Think of topology of the graph, both BFS and DFS can solve this problem.
+//Time: O(n), Space: O(n)
+//Think of topology of the graph, both BFS and DFS can solve this problem.
 public class DeepCopyUndirectedGraph {
     public List<GraphNode> cloneGraph(List<GraphNode> graph) {
         Map<GraphNode, GraphNode> lookup = new HashMap<>();
