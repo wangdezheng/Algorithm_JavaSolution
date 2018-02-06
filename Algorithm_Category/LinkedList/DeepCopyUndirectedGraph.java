@@ -12,7 +12,7 @@ import java.util.Map;
         The given graph is not null
  */
 
-//Time: O(n), Space: O(n)
+//Time: O(V + E), Space: O(V)
 //Think of topology of the graph, both BFS and DFS can solve this problem.
 public class DeepCopyUndirectedGraph {
     public List<GraphNode> cloneGraph(List<GraphNode> graph) {
