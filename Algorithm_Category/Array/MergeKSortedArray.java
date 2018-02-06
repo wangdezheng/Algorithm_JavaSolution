@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
         The input arrayOfArrays is not null, none of the arrays is null either.
  */
 
-//Time:O(n), Space: O(n)
+//Time:O(kn * logk), Space: O(k), k is the size of the longest array in arrayOfArrays, n indicates how many arrays in arrayOfArrays
 //K-way merge
 public class MergeKSortedArray {
     public int[] merge(int[][] arrayOfArrays) {
