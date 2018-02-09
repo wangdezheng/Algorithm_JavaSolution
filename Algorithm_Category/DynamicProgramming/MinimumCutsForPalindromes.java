@@ -18,7 +18,7 @@ public class MinimumCutsForPalindromes {
             return 0;
         }
         char[] array = input.toCharArray();
-        // cut[i] represents the minimum cut for length i + 1
+        // cut[i] represents the minimum cut at length i + 1
         int[] cut = new int[array.length];
         for (int i = 1; i < cut.length; i++) {
             // if the string is already palindrome, then we don't need to cut it
