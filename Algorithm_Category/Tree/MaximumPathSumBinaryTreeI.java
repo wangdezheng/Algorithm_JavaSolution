@@ -9,9 +9,9 @@ package Tree;
 
     2     11
 
-  /        \
- 6         14
+        /     \
 
+       6       14
  The maximum path sum is 6 + 11 + 14 = 31.
  */
 //Time: O(n), Space: O(Height)
