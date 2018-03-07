@@ -21,7 +21,7 @@ package Tree;
 
  The maximum path sum is 11 + 14 = 25
  */
-//Time: O(n), Space: O(1), bottom-up solution
+//Time: O(n), Space: O(Height), bottom-up solution
 public class MaximumPathSumBinaryTreeIII {
     public int maxPathSum(TreeNode root) {
         int[] max = new int[]{Integer.MIN_VALUE};
