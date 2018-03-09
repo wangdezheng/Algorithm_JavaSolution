@@ -39,6 +39,8 @@ import java.util.Set;
     //case1: hashSet contains x, x belongs to the left subtree,  put x into new left level-order array
     //case2: doesn't contain x, x belongs to the right subtree, put x into new right level-order array
 //Step3: recursion
+
+//Time: O(n ^ 2), Space: O(n ^ 2)
 public class ReconstructTreeWithLevelOrderAndInOrder {
     public TreeNode rebuildTree(int[] in, int[] level) {
         Map<Integer, Integer> inOrderMap = new HashMap<>();
