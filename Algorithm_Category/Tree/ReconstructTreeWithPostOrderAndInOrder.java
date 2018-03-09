@@ -6,6 +6,11 @@ import java.util.Map;
 /**
  * Reconstruct a tree (with no duplicate values) with post-order and in-order sequences of all nodes.
  *
+ *  Assumptions:
+ *
+        The given sequence is not null
+        There are no duplicate keys in the binary search tree
+ *
  *  Examples:
                 10
 
@@ -25,9 +30,6 @@ import java.util.Map;
 //Time: O(n), Space: O(n)
 public class ReconstructTreeWithPostOrderAndInOrder {
     public TreeNode reconstruct(int[] in, int[] post) {
-        if (in == null || post == null) {
-            return null;
-        }
         Map<Integer, Integer> inOrderMap = new HashMap<>();
         for (int i = 0; i < in.length; i++) {
             inOrderMap.put(in[i], i);
