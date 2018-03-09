@@ -6,6 +6,11 @@ import java.util.Map;
 /**
  * Reconstruct a tree (with no duplicate values) with pre-order and in-order sequences of all nodes.
  *
+ * Assumptions:
+
+        The given sequences are not null and they have the same length
+        There are no duplicate keys in the binary tree
+ *
  *  Examples:
                 10
 
@@ -25,9 +30,6 @@ import java.util.Map;
 //Time: O(n), Space: O(n)
 public class ReconstructTreeWithPreOrderAndInOrder {
     public TreeNode reconstruct(int[] in, int[] pre) {
-        if (in == null || pre == null) {
-            return null;
-        }
         Map<Integer, Integer> inOrderMap = new HashMap<>();
         for (int i = 0; i < in.length; i++) {
             inOrderMap.put(in[i], i);
