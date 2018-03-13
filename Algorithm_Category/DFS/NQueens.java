@@ -1,4 +1,4 @@
-package Recursion;
+package DFS;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * Each way is represented by a list of the Queen's y index for x indices of 0 to (N - 1)
  */
 
+//Time: O(n!), Space: O(n)
 public class NQueens {
     public List<List<Integer>> nqueens(int n) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();

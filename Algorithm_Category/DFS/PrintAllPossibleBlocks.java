@@ -1,4 +1,4 @@
-package Recursion;
+package DFS;
 
 /**
  * Given an integer n, print all possible blocks for it.
