@@ -1,6 +1,6 @@
 # Ignore all files under /.idea
 /.idea/
-# Ignore all files under .out (no matter where out directory is)
+# Ignore all files under out (no matter where out directory is)
 out/
 # Ignore all files end with .iml (* means zero or more)
 *.iml
