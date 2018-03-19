@@ -18,31 +18,23 @@ public class CombinationsOfKElementsInArray {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> cur = new ArrayList<>();
-        permuteUnique(nums, 0, cur, result);
+        permuteUnique(nums, k, 0, cur, result);
         return result;
     }
 
-    private void permuteUnique(int[] nums, int index, List<Integer> cur, List<List<Integer>> result) {
+    private void permuteUnique(int[] nums, int k, int index, List<Integer> cur, List<List<Integer>> result) {
         if (index == nums.length) {
-            if (cur.size() == 3) {
+            if (cur.size() == k) {
                 result.add(new ArrayList<>(cur));
             }
             return;
         }
         cur.add(nums[index]);
-        permuteUnique(nums, index + 1, cur, result);
+        permuteUnique(nums, k, index + 1, cur, result);
         while(index < nums.length - 1 && nums[index + 1] == nums[index]) {
             index++;
         }
         cur.remove(cur.size() - 1);
-        permuteUnique(nums, index + 1, cur, result);
-    }
-
-    public static void main(String [] args) {
-        CombinationsOfKElementsInArray c = new  CombinationsOfKElementsInArray();
-        List<List<Integer>> result = c.permuteUnique(new int[] {1, 2, 2, 2, 3}, 3);
-        for (List<Integer> list : result) {
-            System.out.println(list);
-        }
+        permuteUnique(nums, k, index + 1, cur, result);
     }
 }
