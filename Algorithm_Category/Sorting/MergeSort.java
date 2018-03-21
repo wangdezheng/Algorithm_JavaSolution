@@ -17,10 +17,10 @@ package Sorting;
 //Time: O(nlogn), Space: O(n)
 public class MergeSort {
     public int[] mergeSort(int[] array) {
-        int[] helper = new int[array.length];
         if (array == null || array.length == 0){
             return array;
         }
+        int[] helper = new int[array.length];
         split(array, helper, 0, array.length - 1);
         return array;
     }
