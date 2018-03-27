@@ -14,6 +14,7 @@ import java.util.List;
     Set = null, all permutations are []
  */
 
+//Time: O(n!), Space: O(n)
 public class AllPermtationsII {
     public List<String> permutations(String set) {
         List<String> result = new ArrayList<>();
