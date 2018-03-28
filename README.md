@@ -6,7 +6,7 @@ I write down their Java solutions as references. Some of them may not be the bes
 
 Shooting me emails if you have any questions or advices.
 
-Contact me at: wang793013053@gmail.com
+Contact me at: wang793013053@163.com
 
 # How to use this repository 
 
