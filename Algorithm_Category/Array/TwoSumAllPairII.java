@@ -23,7 +23,7 @@ import java.util.List;
 //               2. if x + y == target, make sure this is the first time of x is present
 
 //Time: O(n), Space: O(n)
-public class TwoSumPairII {
+public class TwoSumAllPairII {
     public List<List<Integer>> allPairs(int[] array, int target) {
         List<List<Integer>> result = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();
