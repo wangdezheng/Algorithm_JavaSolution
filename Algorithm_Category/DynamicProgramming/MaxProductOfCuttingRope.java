@@ -13,7 +13,7 @@ public class MaxProductOfCuttingRope {
     public int maxProduct(int length) {
         // cut[i] represents the max product when rope length is i
         int[] cut = new int[length + 1];
-        cut[0] = 1;
+        cut[0] = 0;
         cut[2] = 1;
         for (int i = 3; i <= length; i++) {
             int max = 0;
