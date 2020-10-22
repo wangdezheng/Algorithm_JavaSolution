@@ -34,4 +34,5 @@ public class FirstOccurrence {
         right = mid - 1;
       }
     }
+  }
 }
