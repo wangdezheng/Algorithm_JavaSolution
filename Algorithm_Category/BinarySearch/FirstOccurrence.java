@@ -14,7 +14,7 @@ Given a target integer T and an integer array A sorted in ascending order, find 
  Corner Cases:
     What if A is null or A of zero length? We should return -1 in this case.
  */
-public class SearchInSortedMatrixI {
+public class FirstOccurrence {
   public int firstOccur(int[] array, int target) {
     if (array == null || array.length < 1) {
       return -1;
