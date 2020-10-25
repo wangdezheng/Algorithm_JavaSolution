@@ -16,24 +16,26 @@ package Sorting;
 
 //Time: O(n ^ 2), Space: O(1)
 public class SelectionSort {
-    public int[] selectionSort(int[] array) {
-        if (array == null || array.length <= 1) {
-            return array;
-        }
-        int len = array.length;
-        for (int i = 0; i < len - 1; i++) {
-            for (int j = i + 1; j < len; j++) {
-                if (array[i] > array[j]) {
-                    swap(array, i, j);
-                }
-            }
-        }
-        return array;
+  public int[] solve(int[] array) {
+    if (array == null || array.length == 0) {
+      return array;
     }
+    int min = 0;
+    for (int i = 0; i < array.length; i++) {
+      min = i;
+      for (int j = i + 1; j < array.length; j++) {
+        if (array[min] > array[j]) {
+          min = j;
+        }
+      }
+      swap(array, i, min);
+    }
+    return array;
+  }
 
-    private void swap(int[] array, int first, int second) {
-        int temp = array[first];
-        array[first] = array[second];
-        array[second] = temp;
-    }
+  private void swap(int[] array, int first, int second) {
+    int temp = array[first];
+    array[first] = array[second];
+    array[second] = temp;
+  }
 }
