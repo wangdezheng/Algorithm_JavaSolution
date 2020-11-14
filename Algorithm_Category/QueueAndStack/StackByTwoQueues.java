@@ -1,4 +1,7 @@
-package LinkedList;
+package QueueAndStack;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  使用队列实现栈的下列操作：
@@ -14,7 +17,7 @@ public class StackByTwoQueues {
   Queue<Integer> in;
   Queue<Integer> out;
 
-  public MyStack() {
+  public StackByTwoQueues() {
     in = new LinkedList<>();
     out = new LinkedList<>();
   }

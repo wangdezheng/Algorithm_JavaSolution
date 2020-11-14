@@ -1,5 +1,7 @@
 package BinarySearch;
 
+import java.util.Map;
+
 /**
  Given a integer dictionary A of unknown size, where the numbers in the dictionary are sorted in ascending order, determine if a given target integer T is in the dictionary. Return the index of T in A, return -1 if T is not in A.
 
@@ -12,7 +14,7 @@ package BinarySearch;
     A = {1, 2, 5, 9, 12, ......}, T = 7, return -1
  */
 public class SearchInUnknownSizedSortedArray {
-  public int search(Dictionary dict, int target) {
+  public int search(Map<Integer, Integer> dict, int target) {
     int i = 1;
     while (dict.get(i) != null && dict.get(i) < target) {
       i = i * 2;
@@ -20,7 +22,7 @@ public class SearchInUnknownSizedSortedArray {
     return binarySearch(i / 2, i, dict, target);
   }
 
-  private int binarySearch(int left, int right, Dictionary dict, int target) {
+  private int binarySearch(int left, int right, Map<Integer, Integer> dict, int target) {
     while (left <= right) {
       int mid = (left + right) / 2;
       if (dict.get(mid) == null) {

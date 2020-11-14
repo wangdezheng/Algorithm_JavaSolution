@@ -14,7 +14,7 @@ package BinarySearch;
  *      target = 7, return {1, 2}
  *      target = 6, return {-1, -1} to represent the target number does not exist in the matrix.
  */
-public class SearchInSortedMatrixI {
+public class SearchInSortedMatrix {
   public int[] search(int[][] matrix, int target) {
     if (matrix == null) {
       return new int[] {-1, -1};

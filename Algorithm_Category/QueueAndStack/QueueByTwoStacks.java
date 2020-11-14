@@ -1,4 +1,7 @@
-package LinkedList;
+package QueueAndStack;
+
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  Implement a queue by using two stacks.
@@ -14,28 +17,28 @@ public class QueueByTwoStacks {
   Deque<Integer> stackIn;
   Deque<Integer> stackOut;
 
-  public Solution() {
-    stackIn = new ArrayDeque<> ();
-    stackOut = new ArrayDeque<> ();
+  public QueueByTwoStacks() {
+    stackIn = new LinkedList<>();
+    stackOut = new LinkedList<> ();
   }
 
   public Integer poll() {
     if (stackOut.isEmpty()) {
       while (!stackIn.isEmpty()) {
-        stackOut.offerLast(stackIn.pollLast());
+        stackOut.push(stackIn.pop());
       }
     }
-    return stackOut.pollLast();
+    return stackOut.pop();
   }
 
   public void offer(int element) {
-    stackIn.offerLast(element);
+    stackIn.push(element);
   }
 
   public Integer peek() {
     if (stackOut.isEmpty()) {
       while (!stackIn.isEmpty()) {
-        stackOut.offerLast(stackIn.pollLast());
+        stackOut.push(stackIn.pop());
       }
     }
     return stackOut.peekLast();

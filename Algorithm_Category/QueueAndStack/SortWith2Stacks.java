@@ -1,4 +1,6 @@
-package LinkedList;
+package QueueAndStack;
+
+import java.util.LinkedList;
 
 /**
  Given an array that is initially stored in one stack, sort it with one additional stacks (total 2 stacks).

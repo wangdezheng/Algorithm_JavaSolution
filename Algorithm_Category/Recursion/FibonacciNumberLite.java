@@ -22,7 +22,7 @@ public class FibonacciNumberLite {
     if (K == 1) {
       return 1;
     }
-    int result;
+    int result = 0;
     int pre = 1;
     int preOfPre = 0;
     for (int i = 2; i <= K; i++) {
@@ -33,13 +33,13 @@ public class FibonacciNumberLite {
     return result;
   }
 
-  public static int fibonacci(int K) {
-    if (K <= 0) {
-      return 0;
-    }
-    if (K == 1) {
-      return 1;
-    }
-    return fibonacci(K - 1) + fibonacci(K - 2);
-  }
+//  public static int fibonacci(int K) {
+//    if (K <= 0) {
+//      return 0;
+//    }
+//    if (K == 1) {
+//      return 1;
+//    }
+//    return fibonacci(K - 1) + fibonacci(K - 2);
+//  }
 }

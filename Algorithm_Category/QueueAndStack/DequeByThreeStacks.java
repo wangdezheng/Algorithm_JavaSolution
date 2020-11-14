@@ -1,16 +1,18 @@
-package LinkedList;
+package QueueAndStack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  Implement a deque by using three stacks.
  The queue should provide size(), isEmpty(),offerFirst(), offerLast(), pollFirst(), pollLast(), peekFirst() and peekLast() operations.
  When the queue is empty, pollFirst(), pollLast(), peekFirst() and peek() should return null.
  */
-public class StackByTwoQueues {
+public class DequeByThreeStacks {
   Deque<Integer> first;
   Deque<Integer> last;
   Deque<Integer> temp;
 
-  public Solution() {
+  public DequeByThreeStacks() {
     first = new LinkedList<>();
     last = new LinkedList<>();
     temp = new LinkedList<>();

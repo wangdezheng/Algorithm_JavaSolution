@@ -30,4 +30,10 @@ public class Move0sToTheEndI {
     }
     return array;
   }
+
+  private void swap(int first, int second, int[] array) {
+    int temp = array[first];
+    array[first] = array[second];
+    array[second] = temp;
+  }
 }
