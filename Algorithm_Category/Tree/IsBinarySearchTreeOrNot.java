@@ -15,14 +15,14 @@ package Tree;
 //Time: O(n), Space: O(height);
 public class IsBinarySearchTreeOrNot {
     public boolean isBST(TreeNode root) {
-        return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return isBST(root, null, null);
     }
 
-    private boolean isBST(TreeNode root, int min, int max) {
+    private boolean isBST(TreeNode root, Integer min, Integer max) {
         if (root == null) {
             return true;
         }
-        if (root.key <= min || root.key >= max) {
+        if (min != null && root.key <= min || max != null && root.key >= max) {
             return false;
         }
         return isBST(root.left, min, root.key) && isBST(root.right, root.key, max);
