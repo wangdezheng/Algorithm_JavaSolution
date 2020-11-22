@@ -20,14 +20,9 @@ public class DeleteInBST {
             if (root.right == null) { //right subtree is null
                 return root.left;
             }
-            if (root.right.left == null) { // under root.left != null && root.right != null
-                root.right.left = root.left;
-                return root.right;
-            }
-            TreeNode smallest = findSmallestInRight(root.right);
-            smallest.left = root.left;
-            smallest.right = root.right;
-            return smallest;
+            TreeNode rightSmallest = findSmallestInRight(root.right);
+            root.key = rightSmallest.key;
+            root.right = delete(root.right, root.key);
         } else if (root.key < key) { // go down right subtree
             root.right = delete(root.right, key);
         } else { // go down left subtree
@@ -37,11 +32,9 @@ public class DeleteInBST {
     }
 
     private TreeNode findSmallestInRight(TreeNode cur) {
-        while (cur.left.left != null) {
+        while (cur.left != null) {
             cur = cur.left;
         }
-        TreeNode smallest = cur.left;
-        cur.left = cur.left.right;
-        return smallest;
+        return cur;
     }
 }
