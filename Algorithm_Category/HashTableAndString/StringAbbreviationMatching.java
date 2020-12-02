@@ -1,12 +1,11 @@
-package String;
+package HashTableAndString;
 
 /**
- * Word “book” can be abbreviated to 4, b3, b2k, etc. Given a string and an abbreviation, return if the string matches the abbreviation.
- * <p>
- * Assumptions:
- * <p>
- * The original string only contains alphabetic characters.
- * Both input and pattern are not null.
+ Word “book” can be abbreviated to 4, b3, b2k, etc. Given a string and an abbreviation, return if the string matches the abbreviation.
+
+ Assumptions:
+     The original string only contains alphabetic characters.
+     Both input and pattern are not null.
  */
 
 public class StringAbbreviationMatching {
